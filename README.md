@@ -1,5 +1,5 @@
 # mdlAdmin-lite
-Free Starter Admin Template build on Google Material Design Lite
+Free Starter Admin Template built on Google Material Design Lite
 
 This theme was built on top of [http://www.getmdl.io/templates/dashboard/index.html](http://www.getmdl.io/templates/dashboard/index.html)
 
