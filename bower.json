@@ -1,0 +1,21 @@
+{
+  "name": "mdladmin-lite",
+  "version": "1.0",
+  "authors": [
+    "Vikas Singhal <vikas.programmer@gmail.com>"
+  ],
+  "description": "Starter Admin Template build on Google Material Design Lite",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-lite": "~1.0.0",
+    "jquery": "~2.1.4",
+    "grapnel": "~0.5.8"
+  }
+}

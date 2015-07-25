@@ -1,0 +1,289 @@
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+html, body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+.demo-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+}
+.demo-layout .demo-header .mdl-textfield {
+  padding-top: 27px;
+}
+.demo-layout .mdl-layout__header .mdl-layout__drawer-button {
+  color: rgba(0, 0, 0, 0.54);
+}
+.mdl-layout__drawer .avatar {
+  margin-bottom: 16px;
+}
+.demo-drawer {
+  border: none;
+
+}
+.demo-drawer::-webkit-scrollbar {
+ display: none;
+}
+
+.demo-drawer .mdl-menu .mdl-menu__item{
+  display: flex;
+  align-items: center;
+}
+.demo-drawer-header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 16px;
+  height: 151px;
+}
+.demo-avatar-dropdown {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.demo-navigation {
+  flex-grow: 1;
+}
+.demo-layout .demo-navigation .mdl-navigation__link {
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.56);
+  font-weight: 500;
+}
+.demo-layout .demo-navigation .active .mdl-navigation__link {
+  color: #37474F;
+}
+.demo-layout .demo-navigation .mdl-navigation__link:hover { 
+  background-color: #00BCD4;
+  color: #37474F;
+}
+.demo-navigation .mdl-navigation__link .material-icons {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.56);
+  margin-right: 32px;
+}
+
+.demo-content {
+  max-width: 1080px;
+}
+
+.demo-charts {
+  align-items: center;
+}
+.demo-chart:nth-child(1) {
+  color: #ACEC00;
+}
+.demo-chart:nth-child(2) {
+  color: #00BBD6;
+}
+.demo-chart:nth-child(3) {
+  color: #BA65C9;
+}
+.demo-chart:nth-child(4) {
+  color: #EF3C79;
+}
+.demo-graphs {
+  padding: 16px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+/* TODO: Find a proper solution to have the graphs
+ * not float around outside their container in IE10/11.
+ * Using a browserhacks.com solution for now.
+ */
+_:-ms-input-placeholder, :root .demo-graphs {
+  min-height: 664px;
+}
+_:-ms-input-placeholder, :root .demo-graph {
+  max-height: 300px;
+}
+/* TODO end */
+.demo-graph:nth-child(1) {
+  color: #00b9d8;
+}
+.demo-graph:nth-child(2) {
+  color: #d9006e;
+}
+
+.demo-cards {
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.demo-cards .demo-separator {
+  height: 32px;
+}
+.demo-cards .mdl-card__title.mdl-card__title {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+.demo-cards ul {
+  padding: 0;
+}
+.demo-cards h3 {
+  font-size: 1em;
+}
+.demo-updates .mdl-card__title {
+  min-height: 200px;
+  background-image: url('images/dog.png');
+  background-position: 90% 100%;
+  background-repeat: no-repeat;
+}
+.demo-cards .mdl-card__actions a {
+  color: #00BCD4;
+  text-decoration: none;
+}
+
+.demo-card-wide {
+  width: 100%;
+  margin-bottom: 10px
+}
+
+.demo-options h3 {
+  margin: 0;
+}
+.demo-options .mdl-checkbox__box-outline {
+  border-color: rgba(255, 255, 255, 0.89);
+}
+.demo-options ul {
+  margin: 0;
+  list-style-type: none;
+}
+.demo-options li {
+  margin: 4px 0;
+}
+.demo-options .material-icons {
+  color: rgba(255, 255, 255, 0.89);
+}
+.demo-options .mdl-card__actions {
+  height: 64px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+sub-nav {
+  /*padding: 4px;*/
+  transition: visibility 1s linear;
+  /*opacity: 0;*/
+  display: none;
+}
+
+sub-nav.show {
+  /*opacity: 1;*/
+  display: block;
+}
+
+
+sub-nav-item {
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.56);
+  font-weight: 500;
+  cursor: pointer;
+  /*padding: 3px;*/
+}
+
+sub-nav-item a.mdl-navigation__link {
+  display: block !important;
+  padding: 10px 40px !important;
+}
+
+sub-nav-item:hover {
+  background-color: #00BCD4;
+  color: #37474F;
+}
+
+sub-nav-item.active, nav-item.active {
+  background-color: #00BCD4;
+  color: #37474F;
+
+}
+
+nav-item a {
+  cursor: pointer;
+}
+
+#title-sep {
+  display: none;
+}
+
+a.mdl-navigation__link .active {
+  
+}
+
+
+sub-nav-item a.mdl-navigation__link {
+  padding:100px;
+}
+
+.demo-todo.mdl-card {
+  width: 60%;
+  margin: auto;
+}
+.demo-todo > .mdl-card__title {
+  /*color: #fff;*/
+  /*height: 176px;*/
+}
+.demo-todo > .mdl-card__menu {
+  /*color: #fff;*/
+}
+
+.demo-todo .full-width {
+  width: 100%;
+}
+
+/* Fix for selectable table bug, TODO : Remove this; */
+.demo-todo .mdl-data-table th {
+  text-align: left;
+}
+
+.demo-todo .textfield-demo {
+  width: 150px;
+}
+
+
+.demo-element-button .mdl-tabs__panel {
+  text-align: center;
+  padding: 10px;
+}
+
+.loading {
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+sub-nav-item a {
+  width: 100%;
+}
+
+.right-arrow-menu {
+  float: right;
+    text-align: right;
+    position: absolute;
+    right: 10px;
+    margin-top: 2px;
+}
+
